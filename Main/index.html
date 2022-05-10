@@ -207,7 +207,7 @@
 
         <div class="grid-item template wireframes wow zoomIn">
           <div class="img-place" data-src="../assets/img/work/HoldSpell.gif" data-fancybox data-caption="<h5 class='fg-theme'>Into the Dark</h5> <p>Into the Dark is an ongoing project I'm putting together for my CS capstone. It's a first person, atmospheric, stealth action game. This project was my first foray into proper level design. The entire level architecture was built from scratch so I could create unique and memorable locations throughout each part of the game's map. As a stealth action game, each different enemy has its own artificial intelligence quirks and behaviors that I created. Some enemies will rush the player down, while others will stick just close in enough to harass the player with projectiles.</p>">
-            <img src="../assets/img/work/library.PNG" alt="">
+            <img src="../assets/img/work/textured p5.PNG" alt="" style="height: 250px;">
             <div class="img-caption">
               <h5 class="fg-theme">Into the Dark</h5>
               <p>Unity, FPS, Singleplayer</p>
@@ -241,6 +241,8 @@
 
 
   </div> <!-- End Portfolio page -->
+
+
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -249,36 +251,43 @@
       <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      <div class="slideshow-container" >
+        <h3 style="margin-left: 45%; color: aliceblue; visibility: visible; animation-name: fadeInUp;" class="fw-normal wow fadeInUp">Into the Dark</h3>
 
-      <div id="slideshow-example" data-component="slideshow" style="padding-left: 20%; padding-top: 5%; padding-bottom: 2%; background-color: darkslategrey;">
-      <h3 style="margin-left: 25%; color: aliceblue;" class ="fw-normal wow fadeInUp">Some Level Design Work</h3>
-        
-        <div role="list">
-          <div class="slide">
-            <img src="../assets/img/work/library.PNG" alt="" style="width: 75%; height: 20%; max-height: 800px; ">
-          </div>
-          <div class="slide">
-            <img src="../assets/img/work/Church.PNG" alt="" style="width: 75%; height: 20%; max-height: 800px">
-          </div>
-          <div class="slide">
-            <img src="../assets/img/work/Hallway4.PNG" alt="" style="width: 75%; height: 20%; max-height: 800px">
-          </div>
-          <div class="slide">
-            <img src="../assets/img/work/Greybox p2.PNG" alt="" style="width: 75%; height: 20%; max-height: 800px">
-          </div>
-          <div class="slide">
-            <img src="../assets/img/work/Prop Placement.PNG" alt="" style="width: 75%; height: 20%; max-height: 800px">
-          </div>
-          <div class="slide">
-            <img src="../assets/img/work/watchingYou.gif" alt="" style="width: 75%; height: 20%; max-height: 800px">
-          </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="../assets/img/work/library.gif" >
+          <div class="text">Every Environment was built by hand to author a sense that each location was unique</div>
         </div>
+      
+        <div class="mySlides fade">
+          <img src="../assets/img/work/DarkVision.gif" >
+          <div class="text">Custom shaders were built for one of the spells in the game that allows the player to see enemies highlighted through walls</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="../assets/img/work/PlayerDeath.gif" >
+          <div class="text">The entire player animation set was created by hand for this project. Over 25 unique animations were created to bring the main character to life</div>
+        </div>
+
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center; ">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
     <script src="slideshow.js"></script>
     </body>
   </html>
-
-
   
   <!-- Footer -->
   <div class="vg-footer">
